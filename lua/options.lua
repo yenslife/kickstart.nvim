@@ -27,3 +27,5 @@ vim.api.nvim_create_autocmd('FileType', {
 })
 
 vim.keymap.set('i', 'jj', '<Esc>')
+vim.keymap.set('n', '<leader>-', ':split<CR>', { desc = 'Split window horizontally', noremap = true, silent = true })
+vim.keymap.set('n', '<leader>|', ':vsplit<CR>', { desc = 'Split window vertically', noremap = true, silent = true })
