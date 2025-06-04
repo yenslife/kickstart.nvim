@@ -902,8 +902,12 @@ require('lazy').setup({
     'ellisonleao/gruvbox.nvim',
     priority = 1000,
     config = true,
-    opts = {},
+    opts = {
+      vim.cmd.colorscheme 'gruvbox',
+    },
   },
+  { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
+  { 'EdenEast/nightfox.nvim' },
 
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
