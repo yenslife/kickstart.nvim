@@ -886,6 +886,7 @@ require('lazy').setup({
     config = function()
       ---@diagnostic disable-next-line: missing-fields
       require('tokyonight').setup {
+        transparent = true, -- Enable transparent background
         styles = {
           comments = { italic = false }, -- Disable italics in comments
         },
@@ -970,15 +971,6 @@ require('lazy').setup({
     --    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
     --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
     --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
-  },
-  -- my own plugins
-  {
-    -- A terminal plugin for Neovim
-    'akinsho/toggleterm.nvim',
-    version = '*',
-    opts = {
-      open_mapping = [[<c-\>]],
-    },
   },
 
   -- the following comments only work if you have downloaded the kickstart repo, not just copy pasted the
