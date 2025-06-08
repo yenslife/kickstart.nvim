@@ -1,5 +1,15 @@
 # kickstart.nvim
 
+1. 複製這個
+
+```bash
+git clone https://github.com/yenslife/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
+
+2. 進入到 nvim，你可以用 `:Lazy` 來看看有沒有東西沒裝到
+3. `:Mason` 安裝需要的 LSP
+4. 差不多了，可以搭配 Tmux 使用
+
 ## Introduction
 
 A starting point for Neovim that is:
