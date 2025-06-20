@@ -753,6 +753,13 @@ require('lazy').setup({
     opts = {
       notify_on_error = false,
       format_on_save = function(bufnr)
+        local path = vim.fn.expand '%:p'
+
+        -- for hugo templates, we don't want to format the layouts, because the golang templates format...
+        if path:match '/themes/.+/layouts/' then
+          -- Don't format themes/layouts files, they are not meant to be formatted
+          return nil
+        end
         -- Disable "format_on_save lsp_fallback" for languages that don't
         -- have a well standardized coding style. You can add additional
         -- languages here or re-enable it for the disabled ones.
