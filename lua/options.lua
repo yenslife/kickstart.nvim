@@ -35,6 +35,15 @@ vim.api.nvim_create_autocmd('FileType', {
   end,
 })
 
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'templ' },
+  callback = function()
+    vim.opt_local.tabstop = 2
+    vim.opt_local.shiftwidth = 2
+    vim.opt_local.expandtab = true -- 模板語言通常使用空格
+  end,
+})
+
 vim.keymap.set('i', 'jj', '<Esc>')
 vim.keymap.set('n', '<leader>-', ':split<CR>', { desc = 'Split window horizontally', noremap = true, silent = true })
 vim.keymap.set('n', '<leader>|', ':vsplit<CR>', { desc = 'Split window vertically', noremap = true, silent = true })
