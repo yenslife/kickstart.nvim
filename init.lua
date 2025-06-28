@@ -348,6 +348,12 @@ require('lazy').setup({
         { '<leader>t', group = '[T]oggle' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
       },
+      preset = 'helix',
+      win = {
+        height = {
+          max = 18,
+        },
+      },
     },
   },
 
