@@ -8,6 +8,31 @@ sudo apt install gcc -y
 sudo apt-get install build-essential -y
 sudo apt-get install unzip -y
 sudo apt-get install git-all -y
+```
+
+安裝 node
+
+```bash
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+
+# Download and install Node.js:
+nvm install 22
+
+# Verify the Node.js version:
+node -v # Should print "v22.17.1".
+nvm current # Should print "v22.17.1".
+
+# Verify npm version:
+npm -v # Should print "10.9.2".
+```
+
+最後安裝這個 nvim 專案
+
+```bash
 git clone https://github.com/yenslife/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
