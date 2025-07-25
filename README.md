@@ -1,8 +1,13 @@
 # kickstart.nvim
 
-1. 複製這個
+1. 複製這個，安裝這些東東
 
 ```bash
+sudo apt-get install ripgrep -y
+sudo apt install gcc -y
+sudo apt-get install build-essential -y
+sudo apt-get install unzip -y
+sudo apt-get install git-all -y
 git clone https://github.com/yenslife/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
