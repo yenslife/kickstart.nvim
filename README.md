@@ -11,6 +11,8 @@ sudo apt-get install unzip -y
 sudo apt-get install git-all -y
 ```
 
+Install neovim: https://github.com/neovim/neovim/blob/master/INSTALL.md
+
 安裝 node
 
 ```bash
