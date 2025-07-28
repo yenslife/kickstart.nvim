@@ -5,6 +5,7 @@
 ```bash
 sudo apt-get install ripgrep -y
 sudo apt install gcc -y
+sudo apt install curl -y
 sudo apt-get install build-essential -y
 sudo apt-get install unzip -y
 sudo apt-get install git-all -y
